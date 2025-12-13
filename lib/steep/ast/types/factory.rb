@@ -294,7 +294,6 @@ module Steep
                 raise "`#{u_}` cannot be type parameter upper bound"
               end
             },
-            lower_bound: nil,
             location: type_param.location
           ).unchecked!(type_param.unchecked)
         end
