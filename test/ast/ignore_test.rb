@@ -7,7 +7,7 @@ class AST__IgnoreTest < Minitest::Test
 
   def parse(ruby)
     buffer = ::Parser::Source::Buffer.new("a.rb", 1, source: ruby)
-    node, comments = Parser::Ruby33.new.parse_with_comments(buffer)
+    node, comments = Parser::Ruby34.new.parse_with_comments(buffer)
 
     [node, comments, RBS::Buffer.new(name: "a.rb", content: ruby)]
   end

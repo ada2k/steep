@@ -1,7 +1,7 @@
 require "steep/version"
 
 require "pathname"
-require "parser/ruby33"
+require "parser/ruby34"
 require "prism"
 require "active_support"
 require "active_support/core_ext/object/try"
