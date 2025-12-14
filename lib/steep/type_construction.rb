@@ -2672,7 +2672,7 @@ module Steep
         when :block, :numblock, :send, :csend
           synthesize_sendish(node, hint: hint, tapp: nil)
 
-        when :forwarded_args, :forward_arg
+        when :forwarded_args, :forward_arg, :itblock
           add_typing(node, type: AST::Builtin.any_type)
 
         else
